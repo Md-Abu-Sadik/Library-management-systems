@@ -15,8 +15,6 @@ Search Book: Search for a book by its title.
 How to Use:
 Clone the repository to your local machine.
 
-git clone https://github.com/your-username/library-management-system.git
-Compile the C++ program using a C++ compiler.
 
 
 g++ library_management_system.cpp -o library_management_system
