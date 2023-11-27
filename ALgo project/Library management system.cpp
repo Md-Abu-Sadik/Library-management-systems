@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <string>
 using namespace std;
 class Book
 {
@@ -79,6 +80,18 @@ public:
             cout << "Book not found.\n";
         }
     }
+
+    
+    void menuDisplay() {
+        cout << "\nLibrary Management System\n";
+        cout << "1. Add Book\n";
+        cout << "2. Remove Book\n";
+        cout << "3. Display Books\n";
+        cout << "4. Search Book\n";
+        cout << "5. Exit\n";
+        cout << "Enter your choice: ";
+    }
+
 };
 
 int main()
@@ -87,14 +100,8 @@ int main()
 
     while (true)
     {
-        cout << "\nLibrary Management System\n";
-        cout << "1. Add Book\n";
-        cout << "2. Remove Book\n";
-        cout << "3. Display Books\n";
-        cout << "4. Search Book\n";
-        cout << "5. Exit\n";
-        cout << "Enter your choice: ";
-
+        library.menuDisplay();
+        
         int choice;
         cin >> choice;
 
